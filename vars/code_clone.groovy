@@ -1,4 +1,4 @@
-def code(github_url,branch){
+def code(String github_url, String branch){
   echo "This is cloning your github repo"
-  sh "git clone url:${github_url} branch:{branch}"
+  git url:github_url, branch:branch
 }
