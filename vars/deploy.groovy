@@ -1,4 +1,5 @@
 def call(String container_name){
+  //This file is only for reference for my future docker run command builds, this doesnt actually works as the script command in the jenkins notesapp of Londhe Shubham repo
   sh "docker network create mynetwork || true"
   
   sh "docker stop mysql_db django_app nginx || true"
